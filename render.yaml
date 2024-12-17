@@ -1,0 +1,9 @@
+services:
+  - type: web
+    plan: free
+    name: pmfilterbot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python3 main.py
+    repo: https://github.com/nonamebesty/Auto-Filter-Bot.git
+    branch: main
