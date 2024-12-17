@@ -4,6 +4,6 @@ services:
     name: pmfilterbot
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python3 main.py
+    startCommand: python3 bot.py
     repo: https://github.com/nonamebesty/Auto-Filter-Bot.git
     branch: main
