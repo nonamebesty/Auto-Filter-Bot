@@ -25,18 +25,18 @@ BOT_TOKEN = environ.get('BOT_TOKEN')
 #ADMINS = '880087645'
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '880087645').split()]
 USERNAME = environ.get('USERNAME', 'https://telegram.me/JAsuran2p0')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002396553917'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001966055101')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://video:video@cluster0.gp0rn.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://video:video@cluster0.gp0rn.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "asuranj")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'AutofilterBot')
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002396553917'))
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1001966055101'))
 QR_CODE = environ.get('QR_CODE', 'https://envs.sh/Cps.jpg')
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 
 #this vars is for when heroku or koyeb acc get banned, then change this vars as your file to link bot name
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002396553917'))
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1001966055101'))
 URL = environ.get('URL', 'https://worthwhile-leesa-zeetamil-8f0b5823.koyeb.app/')
 
 # verify system vars
