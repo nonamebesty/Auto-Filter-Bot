@@ -26,10 +26,10 @@ BOT_TOKEN = environ.get('BOT_TOKEN')
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '880087645').split()]
 USERNAME = environ.get('USERNAME', 'https://telegram.me/JAsuran2p0')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002396553917'))
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001188070894 -100169224324 -1002461730224 -1002223699552 -1002397109795 -1001775437494 -1001685364040 -1001274359769 -1001188070894 -100169224324 -1002461730224 -1002223699552').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://mvideo:mvideo@cluster0.bpj54.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://mvideo:mvideo@cluster0.bpj54.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_NAME = environ.get('DATABASE_NAME', "asuranj1")
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://video:video@cluster0.gp0rn.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://video:video@cluster0.gp0rn.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "asuranj")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'AutofilterBot')
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002396553917'))
 QR_CODE = environ.get('QR_CODE', 'https://envs.sh/Cps.jpg')
@@ -37,7 +37,7 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 
 #this vars is for when heroku or koyeb acc get banned, then change this vars as your file to link bot name
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002396553917'))
-URL = environ.get('URL', 'https://neutral-lynnet-dappa-159965a6.koyeb.app/')
+URL = environ.get('URL', 'https://worthwhile-leesa-zeetamil-8f0b5823.koyeb.app/')
 
 # verify system vars
 IS_VERIFY = is_enabled('IS_VERIFY', True)
