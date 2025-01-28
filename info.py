@@ -25,7 +25,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN')
 #ADMINS = '880087645'
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '880087645').split()]
 USERNAME = environ.get('USERNAME', 'https://telegram.me/JAsuran2p0')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001966055101')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001966055101'))
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://video:video@cluster0.gp0rn.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://video:video@cluster0.gp0rn.mongodb.net/?retryWrites=true&w=majority")
